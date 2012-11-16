@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.zephyr.telserver.bean.Studentrfid" table="studentrfid" catalog="studentsafe">
+        <id name="studentUID" type="string">
+            <column name="studentUID" length="50" />
+            <generator class="uuid.hex" />
+        </id>
+        
+        <property name="studentID" type="string">
+            <column name="studentID" length="50" />
+        </property>
+        <property name="studentName" type="string">
+            <column name="StudentName" length="40" />
+        </property>
+        <property name="rfidCardID" type="string">
+            <column name="RfidCardID" length="50" />
+        </property>
+        <property name="studentSex" type="string">
+            <column name="StudentSex" length="2" />
+        </property>
+        <property name="classUID" type="string">
+            <column name="class" length="50" />
+        </property>
+        <property name="teacherUID" type="string">
+            <column name="teacher" length="50" />
+        </property>
+        <property name="studentBirthday" type="date">
+            <column name="StudentBirthday" length="0" />
+        </property>
+        
+ 
+        <property name="lowCardNumber" type="string">
+            <column name="LowCardNumber" length="32" />
+        </property>
+        
+         <property name="remainingTime" type="string">
+            <column name="remaining_time" length="64" />
+        </property>
+ 
+    </class>
+</hibernate-mapping>

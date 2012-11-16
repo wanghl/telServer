@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.zephyr.telserver.bean.Studentfamily" table="studentfamily" catalog="studentsafe">
+        <id name="familyUID" type="string">
+            <column name="FamilyUID" length="50" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="studentUID" type="string">
+            <column name="studentUID" length="50" />
+        </property>
+        <property name="familyName" type="string">
+            <column name="FamilyName" length="40" />
+        </property>
+        <property name="familySex" type="string">
+            <column name="FamilySex" length="10" />
+        </property>
+        <property name="relationship" type="string">
+            <column name="Relationship" length="20" />
+        </property>
+        <property name="familyPhone" type="string">
+            <column name="FamilyPhone" length="20" />
+        </property>
+        <property name="isSendMessage" type="int">
+            <column name="IsSendMessage" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.zephyr.telserver.bean.CallHistoryBean" table="callhistory" catalog="studentsafe">
+        <id name="objuid" type="string">
+            <column name="objuid" length="32" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="start_time" type="string">
+            <column name="start_time" length="14" />
+        </property>
+        <property name="calledDuration" type="string">
+            <column name="called_duration" length="6" />
+        </property>
+        <property name="callNumber" type="string">
+            <column name="call_number" length="11" />
+        </property>
+        <property name="studentName" type="string">
+            <column name="student_name" length="20" />
+        </property>
+        <property name="studentClass" type="string">
+            <column name="student_class" length="20" />
+        </property>
+        <property name="familyRelations" type="string">
+            <column name="family_relations" length="10"/>
+        </property>
+        <property name="familyName" type="string">
+            <column name="family_name" length="10"/>
+        </property>
+         <property name="telephoneId" type="string">
+            <column name="telephoneid" length="28" />
+        </property>
+         <property name="telephoneNumber" type="string">
+            <column name="tele_number" length="11" />
+        </property>
+
+    </class>
+</hibernate-mapping>

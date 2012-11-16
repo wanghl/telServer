@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+
+<project default="build" basedir=".">
+
+    <target name="tar">
+        <copy todir="${basedir}/target/appassembler">
+    			<fileset dir="${basedir}/src/main/resources">
+    				<include name="*.java"/>
+						<include name="*.properties"/>
+						<include name="*.*"/>
+    			</fileset>
+        </copy>
+        <tar destfile="${basedir}/target/teleserver.tar" basedir="${basedir}/target/appassembler"/>
+    </target>
+    <target name="build" depends="tar">
+    </target>
+</project>
+

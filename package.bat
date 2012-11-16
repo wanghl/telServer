@@ -1,0 +1,1 @@
+mvn  clean -Dmaven.test.skip=true package appassembler:assemble assembly:single

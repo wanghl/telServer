@@ -1,0 +1,18 @@
+<assembly>
+  <id></id>
+  <formats>
+  	<format>tar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  
+  <fileSets>
+    <fileSet>
+      <directory>${basedir}/target/appassembler</directory>
+      <outputDirectory></outputDirectory>
+    </fileSet>
+   	<fileSet>
+	    <directory>${basedir}/src/main/resources</directory>
+	    <outputDirectory>etc</outputDirectory>
+ 	 </fileSet>
+  </fileSets>
+</assembly>

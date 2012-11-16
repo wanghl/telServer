@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-9-14 23:37:43 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.zephyr.telserver.bean.TelephoneStatusBean" table="telephonestatus" catalog="studentsafe">
+        <id name="objuid" type="string">
+            <column name="objuid" length="32" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="telephoneId" type="string">
+            <column name="telephoneid" length="28" />
+        </property>
+        <property name="school" type="string">
+            <column name="school" length="32" />
+        </property>
+        <property name="powerStatus" type="string">
+            <column name="power_status" length="1" />
+        </property>
+        <property name="handleLine" type="string">
+            <column name="handleLine" length="1" />
+        </property>
+        <property name="shellDoors" type="string">
+            <column name="shell_doors" length="1" />
+        </property>
+        <property name="versionInfo" type="string">
+            <column name="version_info" length="30"/>
+        </property>
+        <property name="connectionTime" type="calendar">
+            <column name="connection_time" length="0"/>
+        </property>
+        <property name="connectionStatus" type="string">
+            <column name="connection_status" length="1"/>
+        </property>
+
+    </class>
+</hibernate-mapping>
